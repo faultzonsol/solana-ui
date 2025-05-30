@@ -23,7 +23,7 @@ interface TokenConfig {
   sellPercent: number;
 }
 
-export interface SwapSellBundle {
+interface SwapSellBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

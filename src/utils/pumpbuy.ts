@@ -24,7 +24,7 @@ interface TokenConfig {
   solAmount: number;
 }
 
-export interface PumpBuyBundle {
+interface PumpBuyBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

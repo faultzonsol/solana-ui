@@ -23,7 +23,7 @@ interface TokenConfig {
   solAmount: number;
 }
 
-export interface RayBuyBundle {
+interface RayBuyBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

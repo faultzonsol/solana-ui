@@ -41,7 +41,7 @@ export interface BonkCreateConfig {
   initialBuyAmount: number; // SOL amount for initial buy
 }
 
-export interface BonkCreateResponse {
+interface BonkCreateResponse {
   success: boolean;
   tokenCreation?: {
     transaction: string;

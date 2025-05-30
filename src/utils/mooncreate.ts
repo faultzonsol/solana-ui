@@ -20,11 +20,11 @@ export interface WalletForMoonCreate {
   privateKey: string;
 }
 
-export interface TokenCreationConfig {
+interface TokenCreationConfig {
   config: any; // The full config object with tokenCreation metadata
 }
 
-export interface MoonCreateBundle {
+interface MoonCreateBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

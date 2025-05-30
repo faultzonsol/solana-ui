@@ -87,7 +87,7 @@ interface ActionsPageProps {
 }
 
 // Simplified Tooltip component without animations
-export const Tooltip = ({ 
+const Tooltip = ({ 
   children, 
   content,
   position = 'top'

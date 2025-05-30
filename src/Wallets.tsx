@@ -6,7 +6,7 @@ import { Connection } from '@solana/web3.js';
 import { WalletOperationsButtons } from './OperationsWallets'; // Import the new component
 
 // Tooltip Component with cyberpunk styling
-export const Tooltip = ({ 
+const Tooltip = ({ 
   children, 
   content,
   position = 'top'
@@ -62,7 +62,7 @@ export const maxWalletsConfig = {
 } as const;
 
 // Updated toggle function for wallets based on token and SOL conditions
-export const toggleWalletsByBalance = (
+const toggleWalletsByBalance = (
   wallets: WalletType[], 
   showWithTokens: boolean,
   solBalances: Map<string, number>,
@@ -76,7 +76,7 @@ export const toggleWalletsByBalance = (
   }));
 };
 
-export type ScriptType = keyof typeof maxWalletsConfig;
+type ScriptType = keyof typeof maxWalletsConfig;
 
 /**
  * Counts the number of active wallets in the provided wallet array
@@ -92,7 +92,7 @@ export const countActiveWallets = (wallets: WalletType[]): number => {
  * @param wallets Array of wallet objects
  * @returns Array of active wallets
  */
-export const getActiveWallets = (wallets: WalletType[]): WalletType[] => {
+const getActiveWallets = (wallets: WalletType[]): WalletType[] => {
   return wallets.filter(wallet => wallet.isActive);
 };
 
@@ -119,7 +119,7 @@ export const validateActiveWallets = (wallets: WalletType[], scriptName: ScriptT
 };
 
 // New function to toggle all wallets regardless of balance
-export const toggleAllWallets = (wallets: WalletType[]): WalletType[] => {
+const toggleAllWallets = (wallets: WalletType[]): WalletType[] => {
   const allActive = wallets.every(wallet => wallet.isActive);
   return wallets.map(wallet => ({
     ...wallet,
@@ -128,7 +128,7 @@ export const toggleAllWallets = (wallets: WalletType[]): WalletType[] => {
 };
 
 // Updated to use separate SOL balance tracking
-export const toggleAllWalletsWithBalance = (
+const toggleAllWalletsWithBalance = (
   wallets: WalletType[],
   solBalances: Map<string, number>
 ): WalletType[] => {

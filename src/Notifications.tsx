@@ -107,7 +107,7 @@ const cyberpunkClasses = {
   errorCloseButton: "ml-2 rounded-full p-1 hover:bg-[#ff305c40] text-[#ff8fa7] transition-colors duration-300"
 }
 
-export const ToastContext = createContext<{
+const ToastContext = createContext<{
   showToast: (message: string, type: 'success' | 'error') => void
 }>({
   showToast: () => {},
@@ -182,4 +182,3 @@ export const useToast = () => {
   return useContext(ToastContext)
 }
 
-export default ToastProvider

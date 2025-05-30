@@ -23,7 +23,7 @@ interface TokenConfig {
   solAmount: number;
 }
 
-export interface MoonBuyBundle {
+interface MoonBuyBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

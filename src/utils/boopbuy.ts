@@ -24,7 +24,7 @@ interface TokenConfig {
   solAmount: number;
 }
 
-export interface BoopBuyBundle {
+interface BoopBuyBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

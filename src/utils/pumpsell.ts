@@ -24,7 +24,7 @@ interface TokenSellConfig {
   sellPercent: number; // Percentage of tokens to sell (1-100)
 }
 
-export interface PumpSellBundle {
+interface PumpSellBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

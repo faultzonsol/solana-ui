@@ -41,7 +41,7 @@ export interface CookCreateConfig {
   settingsVersion?: number; // Optional version number
 }
 
-export interface CookCreateResponse {
+interface CookCreateResponse {
   success: boolean;
   tokenCreation?: {
     transaction: string;

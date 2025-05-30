@@ -291,4 +291,3 @@ export const ChartPage: React.FC<ChartPageProps> = ({
   );
 };
 
-export default ChartPage;

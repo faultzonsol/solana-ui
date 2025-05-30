@@ -23,7 +23,7 @@ interface TokenConfig {
   sellPercent: number;
 }
 
-export interface RaySellBundle {
+interface RaySellBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

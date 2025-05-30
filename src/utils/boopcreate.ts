@@ -20,11 +20,11 @@ export interface WalletForBoopCreate {
   privateKey: string;
 }
 
-export interface TokenCreationConfig {
+interface TokenCreationConfig {
   config: any; // The full config object with tokenCreation metadata
 }
 
-export interface BoopCreateBundle {
+interface BoopCreateBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

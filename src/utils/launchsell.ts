@@ -23,7 +23,7 @@ interface TokenConfig {
   sellPercent: number;
 }
 
-export interface LaunchSellBundle {
+interface LaunchSellBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

@@ -121,7 +121,7 @@ export const copyToClipboard = async (text: string, showToast: (message: string,
     return false;
   }
 };
-export const getActiveWalletPrivateKeys = (): string => {
+const getActiveWalletPrivateKeys = (): string => {
   try {
     const activeWallets = getActiveWallets()
     return activeWallets
@@ -147,7 +147,7 @@ export const getWallets = (): WalletType[] => {
     return [];
   }
 };
-export const getActiveWallets = (): WalletType[] => {
+const getActiveWallets = (): WalletType[] => {
   try {
     const savedWallets = Cookies.get(WALLET_COOKIE_KEY);
     if (!savedWallets) return [];

@@ -149,7 +149,7 @@ const prepareDistributionBundles = (signedTransactions: string[]): DistributionB
 /**
  * Execute SOL distribution
  */
-export const distributeSOL = async (
+const distributeSOL = async (
   senderWallet: WalletDistribution,
   recipientWallets: WalletDistribution[]
 ): Promise<{ success: boolean; result?: any; error?: string }> => {

@@ -25,7 +25,7 @@ export interface TokenCreationConfig {
   config: any; // The full config object
 }
 
-export interface PumpCreateBundle {
+interface PumpCreateBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

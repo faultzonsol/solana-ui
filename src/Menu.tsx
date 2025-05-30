@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Tooltip Component with cyberpunk styling
-export const Tooltip = ({ 
+const Tooltip = ({ 
   children, 
   content,
   position = 'top'
@@ -282,5 +282,5 @@ const ServiceSelector = () => {
 };
 
 // Export both names for compatibility
-export { ServiceSelector as CyberpunkServiceSelector };
+;
 export default ServiceSelector;

@@ -23,7 +23,7 @@ interface TokenConfig {
   solAmount: number;
 }
 
-export interface LaunchBuyBundle {
+interface LaunchBuyBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 

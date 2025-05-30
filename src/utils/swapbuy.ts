@@ -23,7 +23,7 @@ interface TokenConfig {
   solAmount: number;
 }
 
-export interface SwapBuyBundle {
+interface SwapBuyBundle {
   transactions: string[]; // Base58 encoded transaction data
 }
 
